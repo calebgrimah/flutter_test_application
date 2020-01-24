@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import 'authentication_bloc.dart';
 
@@ -10,7 +10,6 @@ class AuthenticationBlocProvider extends InheritedWidget {
       : super(key: key, child: child);
 
   static AuthenticationBlocProvider of(BuildContext context) {
-    //changed from this deprecated method: @inheritFromWidgetOfExactType
     return (context
         .dependOnInheritedWidgetOfExactType<AuthenticationBlocProvider>());
   }

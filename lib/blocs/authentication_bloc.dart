@@ -25,8 +25,8 @@ class AuthenticationBloc {
   // We will not manually call the dispose()
   // because it needs to be accessible throughout the lifetime of the app
   void dispose() {
-//    _authenticationController.close();
-//    _logoutController.close();
+    _authenticationController.close();
+    _logoutController.close();
   }
 
   void onAuthChanged() {
